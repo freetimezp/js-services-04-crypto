@@ -29,3 +29,15 @@ const closeNavbar = function () {
 };
 
 addEventOnElem(navbarLinks, "click", closeNavbar);
+
+const header = document.querySelector("[data-header]");
+
+const activeHeader = function () {
+    if(window.scrollY > 300) {
+        header.classList.add("active");
+    }else{
+        header.classList.remove("active");
+    }
+};
+
+addEventOnElem(window, "scroll", activeHeader);

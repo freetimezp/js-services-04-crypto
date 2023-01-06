@@ -126,7 +126,6 @@ body {
   color: var(--cadet-blue-crayola);
   font-size: 1.6rem;
   line-height: 1.4;
-  height: 300vh;
 }
 
 body.active {
@@ -203,6 +202,44 @@ body.active {
 .btn-primary:is(:hover, :focus)::after {
   transform: translateX(0);
   opacity: 1;
+}
+
+.section {
+  padding-block: var(--section-padding);
+}
+
+/* [data-section] > * {
+  transform: translateY(50px);
+  opacity: 0;
+  transition: var(--transition-3);
+}
+
+[data-section].active > * {
+  transform: translateY(0);
+  opacity: 1;
+} */
+
+h1,
+h2,
+h3 {
+  color: var(--white);
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: var(--fs-1);
+}
+
+h2 {
+  font-size: var(--fs-2);
+}
+
+h2 {
+  font-size: var(--fs-3);
+}
+
+.w-100 {
+  width: 100%;
 }
 
 /*-----------------------------------*\
@@ -317,12 +354,21 @@ body.active {
   padding-left: 38px;
 }
 
-
-
 /*-----------------------------------*\
   #HERO
 \*-----------------------------------*/
+.hero {
+  padding-block: 150px 140px;
+}
 
+.hero-content {
+  margin-block-end: 80px;
+}
+
+.hero-text {
+  font-size: var(--fs-5);
+  margin-block: 25px 40px;
+}
 
 
 
