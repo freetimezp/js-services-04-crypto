@@ -264,6 +264,11 @@ h2 {
   color: var(--medium-sea-green);
 }
 
+.section-text {
+  font-size: var(--fs-5);
+  margin-block: 15px 35px;
+}
+
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
@@ -653,10 +658,52 @@ h2 {
 /*-----------------------------------*\
   #INSTRUCTION
 \*-----------------------------------*/
+.instruction :is(.section-title, .section-text) {
+  text-align: center;
+}
 
+.instruction .section-title {
+  margin-block-end: 15px;
+}
 
+.instruction-list {
+  display: grid;
+  gap: 30px;
+  margin-block-start: 50px;
+}
 
+.instruction-card {
+  text-align: center;
+}
 
+.instruction-card .card-banner {
+  transition: var(--transition-2);
+}
+
+.instruction-card:hover .img {
+  transform: rotateY(360deg);
+}
+
+.instruction-card .img {
+  transition: var(--transition-2);
+  margin-inline: auto;
+  margin-block-end: 12px;
+}
+
+.instruction-card .card-subtitle {
+  font-style: var(--fs-8);
+  font-weight: var(--fw-700);
+  text-transform: uppercase;
+}
+
+.instruction-card .card-title {
+  font-size: var(--fs-4);
+  margin-block: 5px 15px;
+}
+
+.instruction-card .card-text {
+  padding-inline: 20px;
+}
 
 /*-----------------------------------*\
   #ABOUT
