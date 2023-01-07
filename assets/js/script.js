@@ -1,5 +1,7 @@
 'use strict';
 
+/* show main menu */
+
 const addEventOnElem = function(elem, type, callback) {
     if(elem.length > 1) {
         for(let i = 0; i < elem.length; i++) {
@@ -41,3 +43,13 @@ const activeHeader = function () {
 };
 
 addEventOnElem(window, "scroll", activeHeader);
+
+/* toggle active on add to fav */
+
+const addToFavBtns = document.querySelectorAll("[data-add-to-fav]");
+
+const toggleActive = function () {
+    this.classList.toggle("active");
+}
+
+addEventOnElem(addToFavBtns, "click", toggleActive);
