@@ -269,6 +269,27 @@ h2 {
   margin-block: 15px 35px;
 }
 
+.section-list {
+  margin-block-end: 35px;
+}
+
+.section-item:not(:last-child) {
+  margin-block-end: 25px;
+}
+
+.section-item .title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-block-end: 15px;
+}
+
+.section-item .title-wrapper ion-icon {
+  flex-shrink: 0;
+  color: var(--blue-crayola);
+  font-size: 24px;
+}
+
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
@@ -708,6 +729,15 @@ h2 {
 /*-----------------------------------*\
   #ABOUT
 \*-----------------------------------*/
+.about {
+  background-color: var(--eerie-black-1);
+}
+
+.about-banner {
+  margin-block-end: 40px;
+}
+
+
 
 
 
