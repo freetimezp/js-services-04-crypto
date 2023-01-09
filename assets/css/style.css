@@ -208,7 +208,7 @@ body.active {
   padding-block: var(--section-padding);
 }
 
-/* [data-section] > * {
+[data-section] > * {
   transform: translateY(50px);
   opacity: 0;
   transition: var(--transition-3);
@@ -217,7 +217,7 @@ body.active {
 [data-section].active > * {
   transform: translateY(0);
   opacity: 1;
-} */
+} 
 
 h1,
 h2,
@@ -854,13 +854,6 @@ address.footer-contact-link {
 .social-link:is(:hover, :focus) {
   color: var(--blue-crayola);
 }
-
-
-
-
-
-
-
 
 /*-----------------------------------*\
   #MEDIA QUERIES
